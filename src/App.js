@@ -6,7 +6,7 @@ import Coundown from "react-countdown"
 
 function App() {
   const [newYearMessage, setNewYearMessage] = useState([
-    "2024 is coming in",
+    "2026 is coming in",
   ]);
   const [showFireworks, setShowFireworks] = useState(false);
 
@@ -15,7 +15,7 @@ function App() {
   };
 
   function timeLeft() {
-    const newYearDate = new Date("January 1, 2024 00:00:00").getTime();
+    const newYearDate = new Date("January 1, 2026 00:00:00").getTime();
     const dateNow = new Date().getTime();
     const remainingTime = newYearDate - dateNow;
     return remainingTime;
